@@ -1,3 +1,7 @@
+html {
+  font-size: 1.5vmin;
+}
+
 body {
   text-align: center;
   background-color: #D4D4D4;
@@ -69,7 +73,7 @@ h1 {
 #about-title {
   font-family: 'Nautigal', cursive;
   margin:  1%;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bolder;
   color: #BD7320;
   cursor: pointer;
@@ -126,8 +130,41 @@ dialog{
   width: 50%;
   border: 5px solid rgb(255, 255, 255);
   border-radius: 50px;
+  font-size: 1.2rem;
 }
 
 dialog::backdrop {
   backdrop-filter: blur(1px)
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 2.3vmin;
+  }
+
+  h1 {
+    margin: 4%;
+  }
+
+  .row {
+    margin: 4%;
+  }
+
+  #result{
+    margin: 4%;
+  }
+
+  .about-title{
+    margin: 4%;
+  }
+
+  .about-text {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  dialog{
+    width: 80%;
+  }
+
 }
